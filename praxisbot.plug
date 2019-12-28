@@ -1,0 +1,10 @@
+[Core]
+Name = PraxisBot 
+Module = praxisbot
+
+[Python]
+Version = 3
+
+[Documentation]
+Description = A classroom response 'bot for Praxis
+
