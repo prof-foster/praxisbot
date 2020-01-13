@@ -10,11 +10,15 @@ class PraxisBot(BotPlugin):
 			self['counters'] = {}
 
 	@botcmd
+	def pick(self, msg, args):
+		return 
+
+	@botcmd
 	def alive(self, msg, args):
 		with self.mutable('counters') as counters:
 			alive_count = counters.get('alive',0)
 			counters['alive'] = alive_count + 1
-		return "PraxisBot ready for action [" + str(alive_count) + "]"
+		return "PraxisBot alive and ready for action [" + str(alive_count) + "]"
 
 	@botcmd
 	def messagerooms(self, msg, args):
